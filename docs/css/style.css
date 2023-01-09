@@ -396,6 +396,61 @@ textarea:focus
 }
 
 /* -------------------------------------------------------
+                    Portfolio Image
+-------------------------------------------------------- */
+#carousel {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+  }
+  
+  .carousel-item {
+	position: relative;
+  }
+  
+  .carousel-item img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .carousel-item:hover .description {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .description a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border: 1px solid white;
+	border-radius: 5px;
+  }
+  
+  .description a:hover {
+	background-color: white;
+	color: black;
+  }
+  
+  
+/* -------------------------------------------------------
                     Portfolio
 -------------------------------------------------------- */
 
