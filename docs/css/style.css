@@ -396,6 +396,46 @@ textarea:focus
 }
 
 /* -------------------------------------------------------
+                    Nav Bar
+-------------------------------------------------------- */
+nav {
+	background-color: #333;
+	color: white;
+	font-size: 18px;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	margin: 0 10px;
+  }
+  
+  nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: background-color 0.5s;
+  }
+  
+  nav a:hover {
+	background-color: #444;
+  }
+  
+  nav a.active {
+	background-color: #555;
+  }
+  
+/* -------------------------------------------------------
+                   Project CSS
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
                     Portfolio Image
 -------------------------------------------------------- */
 #carousel {
