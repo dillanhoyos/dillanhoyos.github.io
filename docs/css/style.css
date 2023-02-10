@@ -256,8 +256,8 @@ textarea:focus
 	height: 100vh;
 	width: 100%;
 	background: rgba(0,0,0,.2);
-	background-image: url(../img/wal.jpg);
-	background-size: cover;
+	background-image: url(../img/Audiowall_dual_conic_conciousness_as_light_0678ffab-a244-43f6-a5aa-cb43b551043a.png);
+	background-size: contain;
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 	position: relative;

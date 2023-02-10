@@ -36,6 +36,7 @@ body {
   .left {
     flex: 1 0 50%;
     background-color: #333333;
+    color:#fff;
     flex-wrap: wrap;
   }
   .allleft {
@@ -81,6 +82,8 @@ body {
     background-color: #000;
     font-size: 36px;
     text-align: center;
+
+    align-items: center;
   
     
     padding: 20px 0;
