@@ -191,6 +191,47 @@ textarea:focus
   opacity: 1;
   font-weight: 400;
 }
+/*video*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.video-box {
+  margin-bottom: 20px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  padding: 10px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 10px 0;
+}
 
 
 /* -------------------------------------------------------
