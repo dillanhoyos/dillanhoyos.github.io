@@ -43,6 +43,8 @@
 
 		<!-- responsive CSS -->
 		<link rel="stylesheet" href="css/responsive.css">
+		<!-- Swiper -- CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 		<!--[if lt IE 9]-->
 		<script src="js/html5shiv.min.js"></script>
@@ -215,27 +217,30 @@
 			to {opacity: 2}
 			}
 							
-		.responsive{
-			width: 100%;
-			height: 0;
-			padding-Bottom: 56.25%;
+		.responsive {
 			position: relative;
+			width: 100%;
+			padding: 0x;
+			border: 2px solid #ccc;
+			border-radius: 8px;
+			height: 10%;
+			padding-bottom: 56.25%;
+			padding-right: 10px;
+			
+			}
 
-
-		}
-	
-		.responsive iframe{
+		.responsive iframe {
 			position: absolute;
 			width: 100%;
-			height: 90%
+			height: 100%;
+			}
 
-
-		}
-		.responsive col-md-5{
-			position: absolute;
+		.responsive .col-md-5 {
+			position: flex;
 			width: 50%;
-			height:45;
-		}
+			height: 45px;
+			margin-right: 10px
+			}
 		.centerContainer {
 			padding-bottom:10%;
 			display: flex;
@@ -243,6 +248,10 @@
 			justify-content: center;
 			height: 10vh;
 			color: #ffffff; /* This centers the container element verticaly */
+			}
+			.wrapper {
+			width: 80%;
+			margin: 0 auto; /* Center the wrapper horizontally */
 			}
 		</style>
 		
@@ -252,11 +261,11 @@
 					<h1>Sound Design Reel</h1>
 				</div>
 				
-			
+			<div class="wrapper">
 				<div class="responsive">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/SGN0Wg0yR8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
-				
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SGN0Wg0yR8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			
 				</div>
+			</div>
 				
 				<br><br><br><br>
 				
@@ -303,25 +312,53 @@
 		<div></div>
 		<div></div>
 
-		<div class="container">
+<div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video-box">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WdHVH9IU2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="content-box">
+              <h2>Unreal_Wwise Implementation Gameplay</h2>
+              <p>This gameplay video of the game I designed features intuitive level design and immersive sound created with Wwise, Blueprint, and C++. Traverse challenging levels while being fully immersed in a soundscape that matches the intensity and tone of the action, creating a truly engaging experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="video-box">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xtKd9y6sqGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="content-box">
+              <h2>Unity_Wwise Implementation Gameplay</h2>
+              <p>Experience immersive gameplay in this level with expertly designed sound using Wwise, C#, and Unity. The use of C# programming language ensures a seamless and dynamic gameplay experience, while Wwise takes the sound design to the next level, creating an unforgettable and fully immersive game world.</p>
+            </div>
+          </div>
+        </div>
+		<div class="swiper-slide">
 			<div class="video-box">
 			  <div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/WdHVH9IU2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
-			  <div class="content-box">
-				<h2>Unreal_Wwise Implementation Gameplay</h2>
-				<p>This gameplay video of the game I designed features intuitive level design and immersive sound created with Wwise, Blueprint, and C++. Traverse challenging levels while being fully immersed in a soundscape that matches the intensity and tone of the action, creating a truly engaging experience.</p> </p>
+				  <iframe width="580" height="355" src="https://www.youtube.com/embed/GlSQ20-3bII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			  </div>
-			</div>
-			
-			<div class="video-box">
-			  <div class="video-container">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/xtKd9y6sqGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-				<div class="content-box">
-				<h2>Unity_Wwise Implementation Gameplay</h2>
-				<p>Experience immersive gameplay in this level with expertly designed sound using Wwise, C#, and Unity. The use of C# programming language ensures a seamless and dynamic gameplay experience, while Wwise takes the sound design to the next level, creating an unforgettable and fully immersive game world.</p>
+			  <div class="content-box">
+				<h2>Twin-Edge</h2>
+				<p>Music Implementation using C# and unity. Utilizing Unity game engine, I was responsible for ensuring that the audio aspects of the game were implemented to the highest technical standards. My role as a musician involved composing and incorporating a fitting musical score that complemented the rhythm-based gameplay. The result was a seamless and immersive audio experience that enhanced the overall enjoyment of the game for players. It was an exciting and rewarding experience to bring my technical and musical skills to the forefront in the creation of the Twin Edge Rhythm Game</p>
 			  </div>
 			</div>
 		  </div>
+      </div>
+      
+      
+	  
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
 		  
 	
 	
@@ -332,31 +369,38 @@
 
 						<!-- hero block -->
 						
-					
-							<div class="col-md-1"></div>
-						
-							<div class="col-md-20">
-							
-								<div class="hero-item">
-									<div class="col-md-5">
-									  <img src="img/linkd.jpeg"  alt="Responsive image">
-									</div>
-									<div class= "centerContainer">
-									  <h2>Hello!</h2>
-									  </div>
-									  <div>
-									  <p>My name is Dillan Hoyos and I am a Sound Designer with three years of experience in the video game industry. I have a passion for Audio engineering and strive to bring my best effort to every project I work on.</p>
-									  <p>Throughout my career, I have had the opportunity to work with a wide range of clients and have developed a diverse skill set as a result. Some of my areas of expertise include Sound Design, Technical Audio implementation and scripting in laguages such as: C#, Javascript, C++ and visual scripting (Blueprints, Pure Data, Max/Msp, Reaktor).</p>
-									  <p>I am always looking for new opportunities to grow and improve, and I am excited to share my portfolio with you. Thank you for taking the time to visit my website and learn more about me and my work.</p>
-									  <a href="img/resume.pdf" download>
-										<br></br><div class = "center"><button class = "center"  >Download Resume</button></div>
-									  </a>
-									  <br></br>
-									  <br></br>
-									  <br></br>
-									</div>
-								  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+	
+			<div class="col-md-20">
+			<div class="hero-item">
+				<div class="col-md">
+				<img src="img/linkd.jpeg" alt="Responsive image">
+				</div>
+				<div class="hero-item-content">
+				<div class="centerContainer">
+				<h2>Hello!</h2>
+				</div>
+				<div>
+				<p>My name is Dillan Hoyos and I am a Sound Designer with three years of experience in the video game industry. I have a passion for Audio engineering and strive to bring my best effort to every project I work on.</p>
+				<p>Throughout my career, I have had the opportunity to work with a wide range of clients and have developed a diverse skill set as a result. Some of my areas of expertise include Sound Design, Technical Audio implementation, and scripting in languages such as: C#, Javascript, C++ and visual scripting (Blueprints, Pure Data, Max/Msp, Reaktor).</p>
+				<p>I am always looking for new opportunities to grow and improve, and I am excited to share my portfolio with you. Thank you for taking the time to visit my website and learn more about me and my work.</p>
+			</div>
+				<a href="img/resume.pdf" download>
+					<br><div class="center"><button class="download-button">Download Resume</button></div>
+				</a>
+				<br>
+				<br>
+				<br>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+		</div>
 
+						
 									<!--	<button>Hire Me</button> -->
 							
 								<!-- <div class="skills">
@@ -749,6 +793,15 @@
 		
 		
 		<!--====== js ======-->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+		  var swiper = new Swiper('.swiper-container', {
+			navigation: {
+			  nextEl: '.swiper-button-next',
+			  prevEl: '.swiper-button-prev',
+			},
+		  });
+		</script>
 
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
