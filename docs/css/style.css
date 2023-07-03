@@ -52,7 +52,7 @@ TABLE OF CONTENTS
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	background-color: #f1f1f1;
+	background-color: #f1f1f152;
 	text-align: center;
 	border-radius: 10px;
 	margin-bottom: 20px;
@@ -117,7 +117,7 @@ TABLE OF CONTENTS
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	color: #111;
+	color: #ffffff;
 	font-weight: 400;
 }
 
@@ -137,14 +137,14 @@ h1,h2,h3,h4,h5,.navbar .navbar-brand{
 }
 
 p{
-	color: #888;
+	color: #ffffff;
 }
 
 main{
 	position: relative;
 	z-index: 2;
-	background-image: url(../img/BackgroundImages/pexels-aleksandar-pasaric-2603464.jpg);
-	background-size: cover;
+	background-image: url(../img/BackgroundImages/pexels-allan-carvalho-16551487.jpg);
+	background-size: contain;
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 	margin-bottom: 247px;
@@ -533,8 +533,8 @@ p {
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #ccc;
-	background-image: url(../img/BackgroundImages/pexels-burak-the-weekender-704555.jpg);
-	background-color: #555;
+
+	background-color: #55555562;
 	background-size: contain;
 	border-radius: 8px;
 	padding: 20px;
