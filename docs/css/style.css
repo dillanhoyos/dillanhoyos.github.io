@@ -32,18 +32,19 @@ TABLE OF CONTENTS
 -------------------------------------------------------- */
 
 .swiper-container {
-	width: 60%;
+	width: 100%;
 	height: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	overflow: hidden;
 	justify-content: center;
+	padding-left: 7%;
   }
 
 .swiper-slide {
 	display: flex;
-	align-items: center;
+	align-items: left;
 	overflow: hidden;
 	justify-content: center;
 }
@@ -68,6 +69,7 @@ TABLE OF CONTENTS
 	overflow: hidden;
 	align-items: center;
 	position: relative;
+	display: flex;
 }
 .swiper-slide {
 	display: flex;
@@ -76,18 +78,20 @@ TABLE OF CONTENTS
   }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff00;
-  font-size: 18px;
-  background-color: rgba(255, 0, 0, 0.159);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+	color: #ffffff00;
+	font-size: 18px;
+	background-color: rgba(255, 0, 0, 0.159);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: calc(100% + 10px); /* Position below the video container */
+	left: 50%; /* Center horizontally */
+	transform: translateX(-50%) translateY(-50%);
+
 }
 
 .video-container iframe {
@@ -102,18 +106,14 @@ TABLE OF CONTENTS
 	padding: 20px;
   }
   
-@media (max-width: 767px) {
-.video-box {
-	max-width: 100%;
-	align-items: center;
-}
 
-.swiper-button-next,
-.swiper-button-prev {
-	width: 30px;
-	height: 30px;
-	font-size: 14px;
-}
+
+
+  
+@media (min-width: 768px) {
+	.swiper-container {
+	  width: 80%
+	}
 }
 
 
@@ -123,7 +123,7 @@ TABLE OF CONTENTS
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	color: #992b8e;
+	color: #000000;
 	font-weight: 400;
 }
 
