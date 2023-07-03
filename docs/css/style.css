@@ -37,12 +37,14 @@ TABLE OF CONTENTS
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	overflow: hidden;
 	justify-content: center;
   }
 
 .swiper-slide {
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 	justify-content: center;
 }
 
@@ -51,6 +53,7 @@ TABLE OF CONTENTS
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 	padding: 10px;
 	background-color: #f1f1f152;
 	text-align: center;
@@ -63,6 +66,7 @@ TABLE OF CONTENTS
 	height: 0;
 	padding-bottom: 56.25%;
 	overflow: hidden;
+	align-items: center;
 	position: relative;
 }
 .swiper-slide {
@@ -92,6 +96,7 @@ TABLE OF CONTENTS
 	left: 0;
 	width: 100%;
   	height: 100%;
+	align-items: center;
 }
 .content-box {
 	padding: 20px;
@@ -100,6 +105,7 @@ TABLE OF CONTENTS
 @media (max-width: 767px) {
 .video-box {
 	max-width: 100%;
+	align-items: center;
 }
 
 .swiper-button-next,
@@ -117,7 +123,7 @@ TABLE OF CONTENTS
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	color: #ffffff;
+	color: #992b8e;
 	font-weight: 400;
 }
 
@@ -1006,7 +1012,7 @@ footer .social-icon span{
 	color: #eee;
 	margin: 10px 2px 0;
 	width: 40px;
-	height: 40px;
+	height: 100px;
 	line-height: 40px;
 	border-radius: 50%;
 	cursor: pointer;
@@ -1015,11 +1021,11 @@ footer .social-icon span{
 
 footer .social-icon span:hover{
 	color: #111;
-	background: #eee;
+	background: #000000;
 }
 
 footer p{
-	color: #aaa;
+	color: #ffffff;
 }
 
 /* -------------------------------------------------------
