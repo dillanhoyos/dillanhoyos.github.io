@@ -30,6 +30,7 @@ TABLE OF CONTENTS
 /* -------------------------------------------------------
                      Swiper
 -------------------------------------------------------- */
+
 .swiper-container {
 	width: 60%;
 	height: 50%;
@@ -40,9 +41,9 @@ TABLE OF CONTENTS
   }
 
 .swiper-slide {
-display: flex;
-align-items: center;
-justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .video-box {
@@ -54,24 +55,43 @@ justify-content: center;
 	background-color: #f1f1f1;
 	text-align: center;
 	border-radius: 10px;
-	width: 100%;
-	max-width: 400px; /* Adjust the max-width as per your preference */
 	margin-bottom: 20px;
 }
 
 .video-container {
-width: 100%;
-height: 0;
-padding-bottom: 56.25%;
-position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	position: relative;
+}
+.swiper-slide {
+	display: flex;
+	
+	justify-content: center;
+  }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff00;
+  font-size: 18px;
+  background-color: rgba(255, 0, 0, 0.159);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .video-container iframe {
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  	height: 100%;
 }
 .content-box {
 	padding: 20px;
@@ -80,6 +100,13 @@ left: 0;
 @media (max-width: 767px) {
 .video-box {
 	max-width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
 }
 }
 
@@ -506,6 +533,9 @@ p {
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #ccc;
+	background-image: url(../img/BackgroundImages/pexels-burak-the-weekender-704555.jpg);
+	background-color: #555;
+	background-size: contain;
 	border-radius: 8px;
 	padding: 20px;
 	margin-bottom: 20px;
