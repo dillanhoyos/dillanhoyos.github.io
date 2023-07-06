@@ -215,6 +215,11 @@ textarea:focus
   font-size: 3rem;
   line-height: 1.2;
 }
+@media only screen and (max-width: 767px){
+.cd-headline{
+	font-size:2rem;
+}
+}
 @media only screen and (min-width: 768px) {
   .cd-headline {
     font-size: 4.4rem;
@@ -241,6 +246,16 @@ textarea:focus
   left: 0;
   top: 0;
 }
+@media only screen and (max-width: 767px) {
+	.cd-words-wrapper b {
+		display: inline-block;
+		position: absolute;
+		white-space: wrap;
+		font-size: 3.5rem;
+		left: 0;
+		top: 0;
+	}
+  }
 
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -263,6 +278,7 @@ textarea:focus
 
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
+  white-space: nowrap;
   vertical-align: top;
 }
 
