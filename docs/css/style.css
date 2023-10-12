@@ -28,10 +28,35 @@ TABLE OF CONTENTS
 
 
 /* -------------------------------------------------------
+                    Containers
+-------------------------------------------------------- */
+.About-container {
+    max-width: 720px;
+	align-items: center; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+  
+@media (min-width: 768px) {
+	.swiper-container {
+	  width: 40%
+	}
+}
+/* -------------------------------------------------------
                      Swiper
 -------------------------------------------------------- */
 
 .swiper-container {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	overflow: hidden;
+	justify-content: center;
+	padding-left: 7%;
+  }
+
+.swiper-container-2 {
 	width: 100%;
 	height: 50%;
 	display: flex;
@@ -73,14 +98,13 @@ TABLE OF CONTENTS
 }
 .swiper-slide {
 	display: flex;
-	
 	justify-content: center;
   }
 .swiper-button-next,
 .swiper-button-prev {
-	color: #ffffff00;
+	color: #ffffff;
 	font-size: 18px;
-	background-color: rgba(255, 0, 0, 0.159);
+	background-color: rgba(255, 255, 255, 0);
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -88,9 +112,28 @@ TABLE OF CONTENTS
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: calc(100% + 10px); /* Position below the video container */
 	left: 50%; /* Center horizontally */
-	transform: translateX(-50%) translateY(-50%);
+	top: 0; /* Position below the video container */
+	bottom: 0px; /* Position below the video container */
+	transform: translateX(-50%) translateY(-1000%);
+
+}
+.swiper-button-next-2,
+.swiper-button-prev-2 {
+	color: #ffffff;
+	font-size: 18px;
+	background-color: rgb(157, 28, 28);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%; /* Center horizontally */
+	top: auto; /* Position below the video container */
+	bottom: 10px; /* Position below the video container */
+	transform: translateX(-50%) translateY(0%);
 
 }
 
@@ -112,6 +155,11 @@ TABLE OF CONTENTS
   
 @media (min-width: 768px) {
 	.swiper-container {
+	  width: 80%
+	}
+}
+@media (min-width: 768px) {
+	.swiper-container-2 {
 	  width: 80%
 	}
 }
@@ -151,6 +199,7 @@ main{
 	z-index: 2;
 	background-image: url(../img/BackgroundImages/pexels-allan-carvalho-16551487.jpg);
 	background-size: contain;
+	background-color: #2a2929c3;
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 	margin-bottom: 247px;
@@ -580,7 +629,15 @@ p {
 
   .centerContainer {
 	text-align: center;
+    margin-top: 50px; /* Adjust the top margin as needed */
   }
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+		}
+	}	
+
+  
 
   .center {
 	display: flex;
