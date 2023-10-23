@@ -45,26 +45,27 @@ TABLE OF CONTENTS
                      Swiper
 -------------------------------------------------------- */
 
-.swiper-container {
-	width: 100%;
-	height: 50%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+.swiper-container-1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 	overflow: hidden;
-	justify-content: center;
-	padding-left: 7%;
-  }
+	flex-wrap: wrap;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+	
+}
 
 .swiper-container-2 {
-	width: 100%;
-	height: 50%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
 	overflow: hidden;
-	justify-content: center;
-	padding-left: 7%;
+	flex-wrap: wrap;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
 .swiper-slide {
@@ -100,41 +101,26 @@ TABLE OF CONTENTS
 	display: flex;
 	justify-content: center;
   }
-.swiper-button-next,
-.swiper-button-prev {
-	color: #ffffff;
-	font-size: 18px;
-	background-color: rgba(255, 255, 255, 0);
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	left: 50%; /* Center horizontally */
-	top: 0; /* Position below the video container */
-	bottom: 0px; /* Position below the video container */
-	transform: translateX(-50%) translateY(-1000%);
-
+.swiper-button-next-1,
+.swiper-button-prev-1 {
+	/* Rest of your styles */
+	left: auto; /* Remove left positioning */
+	right: 10px; /* Adjust right positioning */
+	transform: translateY(-50%);
+	
 }
-.swiper-button-next-2,
-.swiper-button-prev-2 {
-	color: #ffffff;
-	font-size: 18px;
-	background-color: rgb(157, 28, 28);
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	left: 50%; /* Center horizontally */
-	top: auto; /* Position below the video container */
-	bottom: 10px; /* Position below the video container */
-	transform: translateX(-50%) translateY(0%);
 
+.swiper-button-prev-1 {
+	left: 10px; /* Adjust left positioning for prev button */
+	right: auto; /* Remove right positioning */
+}
+.swiper-button-next-1,
+.swiper-button-prev-1 {
+	/* Rest of your styles */
+	left: auto; /* Remove left positioning */
+	right: 10px; /* Adjust right positioning */
+	transform: translateY(-50%);
+	
 }
 
 .video-container iframe {
@@ -157,6 +143,7 @@ TABLE OF CONTENTS
 	.swiper-container {
 	  width: 80%
 	}
+	
 }
 @media (min-width: 768px) {
 	.swiper-container-2 {
