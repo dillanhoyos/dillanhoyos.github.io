@@ -1,0 +1,363 @@
+/* ================================================
+   Minimal Portfolio Design - Dillan Hoyos
+   ================================================ */
+
+/* Reset & Base */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #1a1a1a;
+	background: #ffffff;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Righteous', 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 3rem;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+	color: #1a1a1a;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+}
+
+p {
+	margin-bottom: 1rem;
+	color: #4a4a4a;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+/* Main Container */
+main {
+	background: #ffffff;
+	position: relative;
+}
+
+/* Container */
+.container-minimal {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+/* Header / Hero */
+.header-minimal {
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f8f8f8;
+	padding: 80px 40px;
+}
+
+.hero-content {
+	text-align: center;
+	max-width: 700px;
+}
+
+.hero-content h1 {
+	margin-bottom: 0.75rem;
+	font-size: 3rem;
+	letter-spacing: -1px;
+}
+
+.hero-content h2 {
+	font-size: 1.35rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #666;
+	margin-bottom: 1.25rem;
+}
+
+.hero-content > p {
+	font-size: 0.95rem;
+	color: #666;
+	margin-bottom: 2rem;
+}
+
+.hero-links {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.contact-btn,
+.resume-btn {
+	padding: 14px 36px;
+	border: 2px solid #1a1a1a;
+	background: #ffffff;
+	color: #1a1a1a;
+	font-weight: 500;
+	font-size: 0.95rem;
+	transition: all 0.2s ease;
+	display: inline-block;
+}
+
+.contact-btn:hover,
+.resume-btn:hover {
+	background: #1a1a1a;
+	color: #ffffff;
+	opacity: 1;
+}
+
+.social-links {
+	display: flex;
+	gap: 1.75rem;
+	justify-content: center;
+}
+
+.social-links a {
+	font-size: 1.5rem;
+	color: #1a1a1a;
+}
+
+/* Sections */
+.section-minimal {
+	padding: 100px 0;
+	background: #ffffff;
+}
+
+.section-alt {
+	background: #f8f8f8;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	overflow: hidden;
+	background: #000;
+	margin-bottom: 2rem;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* Project Grid */
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 3rem;
+	margin-top: 3rem;
+}
+
+.project-item {
+	background: #ffffff;
+}
+
+.project-item h3 {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.25rem;
+}
+
+.project-item .role {
+	font-size: 0.875rem;
+	color: #888;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+}
+
+.project-item p {
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.project-item a {
+	text-decoration: underline;
+}
+
+/* Music Grid */
+.music-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+	margin-top: 3rem;
+}
+
+.music-item {
+	background: #ffffff;
+}
+
+.music-item h3 {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.25rem;
+}
+
+.music-item p {
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: #4a4a4a;
+}
+
+/* About Section */
+.about-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-text p {
+	margin-bottom: 1.5rem;
+}
+
+.experience-list {
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.experience-list li {
+	padding: 0.5rem 0;
+	color: #4a4a4a;
+}
+
+.experience-list strong {
+	color: #1a1a1a;
+}
+
+/* Footer */
+.footer-minimal {
+	padding: 60px 40px;
+	text-align: center;
+	background: #1a1a1a;
+	color: #ffffff;
+}
+
+.footer-minimal p {
+	color: #ffffff;
+	margin: 0.25rem 0;
+}
+
+.footer-minimal .location {
+	font-size: 0.875rem;
+	color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.container-minimal {
+		padding: 0 20px;
+	}
+
+	.header-minimal {
+		min-height: 85vh;
+		padding: 60px 20px;
+	}
+
+	.hero-content h1 {
+		font-size: 2.25rem;
+	}
+
+	.hero-content h2 {
+		font-size: 1.15rem;
+	}
+
+	.hero-content > p {
+		font-size: 0.9rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.section-minimal {
+		padding: 60px 0;
+	}
+
+	.project-grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.music-grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero-links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-btn,
+	.resume-btn {
+		width: 100%;
+		max-width: 280px;
+		text-align: center;
+	}
+	
+	.social-links {
+		gap: 2rem;
+	}
+}
+
+/* Print */
+@media print {
+	.social-links,
+	.hero-links,
+	.video-wrapper {
+		display: none;
+	}
+}
+
+/* Accessibility */
+a:focus,
+button:focus {
+	outline: 2px solid #1a1a1a;
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
